@@ -56,10 +56,13 @@ function setResetBtn() {
 
 // Start/Stop Button
 btnLeftElement.addEventListener('click', () => {
-  // ... your code goes here
+  chronometer.start();
+  btnLeftElement.classList.remove('.btn-start');
+  btnLeftElement.classList.add('.btn-stop');
 });
 
 // Reset/Split Button
 btnRightElement.addEventListener('click', () => {
-  // ... your code goes here
+  btnRightElement.classList.remove('.btn-reset');
+  btnRightElement.classList.add('.btn-split');
 });
